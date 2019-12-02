@@ -44,7 +44,7 @@ session_start()
                         <a class="nav-link" href="booking.php">Booking</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="directory.php">Directory</a>
+                        <a class="nav-link" href="../directory.php">Directory</a>
                     </li>
                     <?php
 					//change nav if signed in

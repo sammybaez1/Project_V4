@@ -14,12 +14,11 @@ function cancel($flightID){
 
 if(array_key_exists('Remove',$_POST)){
    $flightID = $_POST['Remove'];
-   cancel($flightID);
+   remove($flightID);
 }
 
 function remove($flightID){
-        $t = query("Delete from flights where flightID ="."'".$flightID."';");
-    echo("Error description: " . $t -> error);
+        query("Delete from flights where flightID ="."'".$flightID."';");
         header("Location: removeFlights.php");
 }
 

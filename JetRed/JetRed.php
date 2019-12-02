@@ -113,7 +113,7 @@ session_start();
 
 
 			while ($row = mysqli_fetch_assoc($result)) {
-				$flightID = $row['flightID'];
+				$flight = $row['flightNumber'];
 				$bookingPage = $row['bookingPage'];
 				$airline = $row['airline'];
 				$startAirport = $row['startAirport'];
@@ -126,7 +126,7 @@ session_start();
 
 				print
 					"<tr>
-					<td>" . $flightID . "</td>
+					<td>" . $flight . "</td>
 					<td>" . $startAirport . "</td>
 					<td>" . $endAirport . "</td>
 					<td>" . $departureTime . "</td>
